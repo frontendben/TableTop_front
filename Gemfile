@@ -22,7 +22,7 @@ end
 gem 'puma', '~> 3.7'
 
 #bundle Puma for Heroku
-web: bundle exec puma -C config/puma.rb
+web: bundle exec puma -t 5:5 -p ${PORT:-3000} -e ${RACK_ENV:-development}
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
