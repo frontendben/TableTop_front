@@ -13,7 +13,6 @@ Rails.application.config.assets.precompile += %w( bstat.js )
 Rails.application.config.assets.precompile += %w( race.js )
 Rails.application.config.assets.precompile += %w( grid.js )
 Rails.application.config.assets.precompile += %w( html2canvas.js )
-Rails.application.config.assets.precompile += %w( jquery.js )
 
 
 # Precompile additional assets.
