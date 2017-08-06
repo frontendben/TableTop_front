@@ -14,9 +14,7 @@ Rails.application.config.assets.precompile += %w( race.js )
 Rails.application.config.assets.precompile += %w( grid.js )
 Rails.application.config.assets.precompile += %w( html2canvas.js )
 
-#Image folder paths
-config.assets.paths << Rails.root.join("app", "assets", "images","board")
-config.assets.paths << Rails.root.join("app", "assets", "images", "index")
+
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
