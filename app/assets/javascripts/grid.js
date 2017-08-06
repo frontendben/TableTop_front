@@ -1,3 +1,8 @@
+//= require jquery
+//= require jquery_ujs
+//= require_tree
+
+
 /* drag elements */
 $(function () {
             /* drag pallets */
