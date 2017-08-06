@@ -8,10 +8,15 @@ Rails.application.config.assets.version = '1.0'
 # Add Yarn node_modules folder to the asset load path.
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
+## JS paths
 Rails.application.config.assets.precompile += %w( bstat.js )
 Rails.application.config.assets.precompile += %w( race.js )
 Rails.application.config.assets.precompile += %w( grid.js )
 Rails.application.config.assets.precompile += %w( html2canvas.js )
+
+#Image folder paths
+config.assets.paths << Rails.root.join("app", "assets", "images","board")
+config.assets.paths << Rails.root.join("app", "assets", "images", "index")
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
