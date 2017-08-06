@@ -1,0 +1,46 @@
+<head>
+
+<title>Dragon Master</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+<div id="flip"><img src ="/assets/index/rotate.png", class ="rotate">
+
+<p class="fliptext"> Flip Your Phone</p>
+</div>
+
+<div id="map">
+ 
+<%= image_tag "scroll.png", class: "log"%>
+
+<%= image_tag "index/hos.png", class: "hos"%>
+
+<%= image_tag "index/wiz.png", class: "wiz"%>
+
+<%= image_tag "index/tav.png", class: "tav"%>
+    
+<%= image_tag "index/logo.png", class: "logo"%>
+
+<img src ="/assets/index/bar.png", class ="bar">   
+<img src ="/assets/index/kn.png", class ="kn">
+<img src ="/assets/index/arch.png", class ="arc">   
+<img src ="/assets/index/mon.png", class ="mon">   
+</div> 
+
+
+<div id="logtext">
+<form action="/welcome/index" method="post">        
+Username:<br>
+<input type="text" name="Username" style="width: 22.5vw; font-size:100%; padding:0"><br><br>
+Password:<br>
+<input type="text" name="Password" style="width: 22.5vw; font-size:100%; padding:0"><br><br>
+</form> 
+
+<%= link_to welcome_logged_path do %>
+    <%= image_tag "index/next.png", class: "button"%>
+<% end %>   
+</div>
+    
+
+</body>

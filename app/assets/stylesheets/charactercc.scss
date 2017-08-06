@@ -1,0 +1,219 @@
+
+@media screen and (orientation:landscape) {
+body {
+	font:12px Arial, Helvetica, sans-serif;
+	color: black;
+	background: #cea510;
+    overflow:hidden;
+    margin: 0;
+
+}
+p {
+line-height:2.3vh;}
+h3 { font-size:24px; font-weight:bold;}
+
+h4 { font-size:24px; font-weight:bold; color:red}
+
+h5 { font-size:14px; font-weight:normal; line-height: 20px;}
+h6 { font-size:15px; font-weight:normal; line-height: 34px;}
+h7 { font-size:2.8vh; font-weight:bold; line-height: 115%;}
+
+
+#bar {
+    height:100vh;
+    width:100vw;
+    background-image:url("tavern.jpg");
+    background-size: 100vw 100vh;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+
+}
+
+.dwarf { 
+      opacity: 1;
+      width: 11.5vw;
+      height: 34.7vh;
+      position: absolute;
+      left: 44vw;
+      top: 37vh;
+ 
+}
+
+.dwarf:hover {
+      opacity: 0.6;
+
+
+
+}
+
+
+.book { 
+      opacity: 1;
+      width: 17vw;
+      height: 60.8vh;
+      position: absolute;
+      left: 67vw;
+      top: 30.3vh;
+ 
+}
+
+.book:hover {
+      opacity: 0.7;
+      z-index: 0;
+
+}
+
+
+.board{ 
+      opacity: 1;
+      width: 10vw;
+      height: 5.2vw;
+      position: absolute;
+      left: 15.5vw;
+      top: 56.8vh;
+      transform:rotateX(55deg);
+
+ 
+}
+
+.board:hover {
+      opacity: 0.6;
+      left: 17vw;
+      top: 54.8vh;
+
+}
+
+#fairy{
+    box-shadow: 0px 0px 10px orange;
+    width: 1.1vw;
+    height: 1.1vw;
+    border-radius: 6vw;
+    position: absolute;
+    left: -1.5vw;
+    top: -20px;
+    background: yellow;
+    animation-name: fly, pulse;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    z-index: 1;
+}
+#dis1{
+    position: absolute;
+    left: 23.1vw;
+    top: 25vh;
+    width: 14.5vw;
+    animation-name: dis1;
+    animation-duration: 3.9s;
+    animation-delay: 1.75s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    opacity: 0;
+    z-index: 1;
+}
+#dis2{
+    position: absolute;
+    left: 23.1vw;
+    top: 25vh;
+    width: 14.5vw;
+    animation-name: dis2;
+    animation-duration: 3.9s;
+    animation-delay: 6.4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    opacity: 0;
+    z-index: 1;
+}
+#dis3{
+    position: absolute;
+    left: 23.1vw;
+    top: 25vh;
+    width: 14.5vw;
+    animation-name: dis3;
+    animation-duration: 3.9s;
+    animation-delay: 11.05s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    opacity: 0;
+     z-index: 1;
+}
+#conban{
+    position: absolute;
+    left: 20.5vw;
+    top: 16vh;
+    width: 20vw;
+    height: 45vh;
+    background-image:url("scroll.png");
+    background-size: 20vw 45vh; 
+    z-index: 0;
+    opacity: 0;
+    animation-name: bakg;
+    animation-duration: 13.5s;
+    animation-delay: 1.75s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    
+}
+@keyframes fly {
+    0%   {left:0px; top:0px;}
+    5% {left:19vw; top:53vh;}
+    31% {left:19vw; top:53vh;}
+    36% {left:48.5vw; top:30vh;}
+    62% {left:48.5vw; top:30vh;}
+    67% {left:77vw; top:25vh;}
+    93% {left:77vw; top:25vh;}
+    95% {left:105vw; top:35vh;}
+    100% {left:105vw; top:35vh;}
+}
+
+@keyframes dis1 {
+    0%   {opacity: 0}
+    5% {opacity: 1}
+    95% {opacity :1}
+    100% {opacity: 0}
+}
+
+@keyframes dis2 {
+    0%   {opacity: 0}
+    5% {opacity: 1}
+    95% {opacity :1}
+    100% {opacity: 0}
+}
+
+@keyframes dis3 {
+    0%   {opacity: 0}
+    5% {opacity: 1}
+    95% {opacity :1}
+    100% {opacity: 0}
+}
+@keyframes bakg {
+    0%   {opacity: 1}
+    95% {opacity :1}
+    100% {opacity: 0}
+}
+@keyframes pulse {
+  0% { box-shadow:0 0 8px yellow, inset 0 0 60px orange; }
+  5% { box-shadow:0 0 60px yellow, inset 0 0 8px orange; }
+  10% { box-shadow:0 0 8px yellow, inset 0 0 60px orange; }
+  15% { box-shadow:0 0 60px yellow, inset 0 0 8px orange; }
+  20% { box-shadow:0 0 8px yellow, inset 0 0 60px orange; }
+  25% { box-shadow:0 0 60px yellow, inset 0 0 8px orange; }
+  30% { box-shadow:0 0 8px yellow, inset 0 0 60px orange; }
+  35% { box-shadow:0 0 60px yellow, inset 0 0 8px orange; }
+  40% { box-shadow:0 0 8px yellow, inset 0 0 60px orange; }
+  45% { box-shadow:0 0 60px yellow, inset 0 0 8px orange; }
+  50% { box-shadow:0 0 8px yellow, inset 0 0 60px orange; }
+  55% { box-shadow:0 0 60px yellow, inset 0 0 8px orange; }
+  60% { box-shadow:0 0 8px yellow, inset 0 0 60px orange; }
+  65% { box-shadow:0 0 60px yellow, inset 0 0 8px orange; }
+  70% { box-shadow:0 0 8px yellow, inset 0 0 60px orange; }
+  75% { box-shadow:0 0 60px yellow, inset 0 0 8px orange; }
+  80% { box-shadow:0 0 8px yellow, inset 0 0 60px orange; }
+  85% { box-shadow:0 0 60px yellow, inset 0 0 8px orange; }
+  90% { box-shadow:0 0 8px yellow, inset 0 0 60px orange; }
+  95% { box-shadow:0 0 60px yellow, inset 0 0 8px orange; }
+  100% { box-shadow:0 0 8px yellow, inset 0 0 60px orange; }
+}
+}

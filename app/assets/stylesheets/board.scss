@@ -1,0 +1,327 @@
+@media screen and (orientation:landscape) {
+body {
+	margin:0;
+	font:12px Arial, Helvetica, sans-serif;
+	color: Black;
+    overflow:hidden;
+}
+p {
+line-height:1px;}
+h10{color:white; font-size:16px; line-height: 150%;}
+/* Board functionality */
+
+#gameboard{
+    float:left;
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    left: 0px;
+    top: 10.9vh;
+    z-index: 0;
+
+}
+#brush1{
+    position: absolute;
+    left: 78vw;
+    top: 14vh;
+    width: 10.5vw;
+    height: 79vh;
+    border-radius: 2vh;
+    border: 0px solid black;
+    background-color:#e4f2de; 
+    z-index: 1;
+    overflow:hidden;
+    -webkit-box-shadow: 2px 1px 2px 3px rgba(0, 0, 0, 0.4); 
+    -moz-box-shadow:    1px 1px 2px 3px rgba(0, 0, 0, 0.4); 
+    box-shadow:         4px 4px 5px 6px rgba(0, 0, 0, 0.4); 
+    text-align:center;
+}
+
+
+#brush2{
+    position: absolute;
+    left: 1.5vw;
+    top: 14vh;
+    width: 8vw;
+    height: 79vh;
+    border-radius: 2vh;
+    border: 0px solid black;
+    background-color: #e4f2de;
+    z-index: 1;
+    overflow:hidden;
+    -webkit-box-shadow: 2px 1px 2px 3px rgba(0, 0, 0, 0.4); 
+    -moz-box-shadow:    1px 1px 2px 3px rgba(0, 0, 0, 0.4); 
+    box-shadow:         4px 4px 5px 6px rgba(0, 0, 0, 0.4);
+    text-align:center;
+
+
+}
+
+/* Tiles */
+
+.square {
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    background-image:url("board/grass.png");
+    background-size: cover;
+    float: bottom;
+    display: inline-block;
+
+
+    
+   
+}
+ .square2 {
+    width: 5vw;
+    height: 5vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    background-image:url("board/dirt.jpg");
+    background-size: cover;
+    z-index: 2;
+    display: inline-block;
+
+}
+ 
+
+ .roof {
+    width: 7.5vw;
+    height: 7.5vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    background-image:url("board/Tiles/roof1.png");
+    background-size: contain;
+     float: bottom;
+     display: inline-block;
+
+
+}
+
+.roof1 {
+    width: 7.5vw;
+    height: 7.5vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    background-image:url("board/Tiles/roof2.png");
+    background-size: contain;
+     float: bottom;
+    display: inline-block;
+
+
+
+}
+.wall {
+    width: 7.5vw;
+    height: 7.5vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    background-image:url("board/Tiles/wall1.png");
+    background-size: contain;
+     float: bottom;
+    display: inline-block;
+
+
+}
+
+.door {
+    width: 3vw;
+    height: 4vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+    background-image:url("board/Tiles/door.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+
+
+}
+
+.wind {
+    width: 1.8vw;
+    height: 2.5vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+    background-image:url("board/Tiles/window.png");
+    background-size: contain;
+     float: bottom;
+    display: inline-block;
+
+
+}
+
+.table {
+    width: 5vw;
+    height: 3.6vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    background-image:url("board/Tiles/table.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+
+
+}
+
+.tree {
+    width: 5vw;
+    height: 8vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    background-image:url("board/Tiles/tree.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+
+
+}
+
+.well {
+    width: 5vw;
+    height: 6.2vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    background-image:url("board/Tiles/well.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+
+
+}
+.water{
+    width: 5vw;
+    height: 5vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    background-image:url("board/Tiles/water.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+
+
+}
+.squaredotted {
+    width: 5vw;
+    height: 5vw;
+    border: 0px dotted black;
+    float: left;
+    color: gray;
+    top: -1400px;
+    background-image:url("board/Tiles/square.jpg");
+    z-index: -1;
+
+}
+
+/* Borders for buttons*/
+
+#plyscr{
+    float:left;
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+        background: -webkit-gradient(linear, left top, left bottom,color-stop(0%, #5a6773 ), color-stop(25%, #4e5a65), color-stop(75%, #4e5a65),color-stop(100%, #5a6773 ));
+    border: 0.3vw solid black;
+    left: 0px;
+    top: 0px;
+    border-radius: 1vw;
+    filter: blur(0.1vw);
+    z-index: -1;
+}
+#emscr{
+    float:left;
+    width: 9.4vw;
+    height: 89vh;
+    position: absolute;
+    background: -webkit-gradient(linear, right top, left top,color-stop(0%, #5a6773 ), color-stop(13%, #4e5a65), color-stop(87%, #5a6773 ),color-stop(100%, #4e5a65)); 
+    border: 0.3vw solid black;
+    left: 90.1vw;
+    top: 10vh;
+    border-radius: 1vw;
+    z-index: -2;
+    filter: blur(0.1vw);
+
+}
+
+/* Funtional Buttons*/
+
+#trash{
+    position: absolute;
+    left: 92vw;
+    top: 75vh;
+    width: 7vw;
+    height: 7vw;
+    background-image:url("board/trash.png");
+    background-size: cover;
+}
+
+#showland{
+    position: absolute;
+    left: 91.5vw;
+    top: 23vh;
+    width: 7vw;
+    height: 7vw;
+}
+#showbuilding{
+    position: absolute;
+    left: 91vw;
+    top: 47vh;
+     width: 7vw;
+    height: 7vw;
+}
+
+#cam{
+    position: absolute;
+    left: 2.5vw;
+    top: 0.8vh;
+    width: 5vw;
+    height: 5vw;
+}
+#camt{
+    position: absolute;
+    left: 8vw;
+    top: 1vw;
+    width: 15vw;
+    height: 4.5vw;
+
+
+  
+}
+
+.landicon { 
+      width: 8vw;
+      margin:10px auto 10 auto;
+ 
+}
+
+.buldicon { 
+      width: 9vw;
+      margin:10px auto 10 auto;
+ 
+}
+
+.camicon { 
+      width: 5vw;
+ 
+}
+}

@@ -1,0 +1,243 @@
+<!-- Call Scripts for Functions -->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+
+<!-- Call Board Css -->
+ 
+<!-- Call Javascript for Wedpage -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" src="grid.js"></script>
+
+
+
+<!-- Visuals for Board -->
+<body>
+    
+<div id="flip"><img src ="/assets/index/rotate.png", class ="rotate">
+
+<p class="fliptext"> Flip Your Phone</p>
+    
+</div>    
+    
+<!-- Pallets for Tiles -->
+<div id="brush2">
+    <br>
+    <div class="roof" ></div><br><br>
+    <div class="roof1" ></div><br><br>
+    <div class="wall" ></div><br><br>
+    <div class="table" ></div><br><br>
+    <div class="door" ></div><br><br>
+    <div class="wind" ></div><br><br>
+</div>    
+
+<div id="brush1">
+    <br>
+    <div class="square" ></div><br><br>
+    <div class="square2" ></div><br><br>
+    <div class="water" ></div><br><br>
+    <div class="tree" ></div><br><br>
+    <div class="well" ></div><br><br>
+</div>
+    
+
+<!-- Boarders for Buttons -->
+<div id="plyscr"></div>
+
+    
+<!-- Buttons -->
+<div id="showland"><input type="image" src="assets/board/land.png" class="landicon" onclick='showb1()'/>
+</div>
+<div id="showbuilding"><input type="image" src="assets/board/buld.png" class="buldicon" onclick='showb2()'/></div>
+    
+<div id="cam"><input type="image" src="assets/board/camera.png" class="camicon" id="Save"/>
+    </div>
+    
+<div id="camt"><p style="color:white; font-size:3.2vh; font-weight:bold;"> Save Map</p></div>
+<div id="emscr"></div>
+<div id="trash"></div>
+    
+<!-- Game Board and Squares -->
+<div id="gameboard">
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+
+    
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+
+    
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+
+    
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+
+    
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div> 
+
+    <div class="squaredotted"></div>
+    
+     <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div> 
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div> 
+    <div class="squaredotted"></div>
+    <div class="squaredotted"></div> 
+    <div class="squaredotted"></div>
+
+</div>
+    
+<%= javascript_include_tag('html2canvas.js') %>
+<%= javascript_include_tag('grid.js') %>
+</body>

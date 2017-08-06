@@ -1,0 +1,264 @@
+@media screen and (orientation:portrait) {
+html, body {
+   overflow: hidden;
+    position: relative;
+    height: 100%;
+    margin:0;
+}
+#flip {
+	height:100vh;
+    width:100vw;
+    background-color: #C8B0B0;
+    background-size: 100vw 100vh;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+    z-index: 100;
+
+.rotate{
+    width:94vw;
+	height:60vh;
+    position: absolute;
+    left: 3vw;
+    top: 20vh;
+    }
+    
+.fliptext{
+    font-size: 7vh;
+    font-weight: bold;
+    text-align:center;
+    font-family: Courier;
+    color: black;
+    width:100vw;
+    height:5vh;
+    position: absolute;
+    line-height: 119%;
+    
+        
+    }
+
+}
+}
+
+
+
+
+@media screen and (orientation:landscape) {
+html, body {
+   overflow: hidden;
+    position: relative;
+    height: 100%;
+    margin:0;
+}
+body {
+	font:12px Arial, Helvetica, sans-serif;
+    overflow:hidden;
+    margin:0;
+
+
+}
+p {
+line-height:2.3vh;}
+h3 { font-size:24px; font-weight:bold;}
+
+h2 { font-size:72px; font-weight:bold;padding-top: 20px}
+
+h4 { font-size:24px; font-weight:bold; color:red}
+
+h5 { font-size:36px; font-weight:bold;}
+h6 { font-size:15px; font-weight:normal; line-height: 34px;}
+
+
+
+#flip {
+	display: none;
+
+}
+#map {
+	height:100vh;
+    width:100vw;
+    background-image:url("map.jpg");
+    background-size: 100vw 100vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+
+}
+
+.log {
+    z-index: 6;
+	width:33vw;
+	height:80vh;
+    position: absolute;
+    left: 32vw;
+    top: 15vh;
+
+}
+
+.hos { 
+      opacity: 1;
+      width: 12vw;
+      z-index: 1;
+      position: absolute;
+      left: 15vw;
+      top: 40vh;
+
+}
+
+.hos:hover {
+      opacity: 0.7;
+      visibility: visible;
+
+
+}
+
+.wiz { 
+      opacity: 1;
+      width: 15vw;
+      z-index: 2;
+      position: absolute;
+      left: 60vw;
+      top: 50vh;
+      
+ 
+}
+
+.wiz:hover {
+      opacity: 0.7;
+
+}
+
+
+.tav { 
+      opacity: 1;
+      width: 9vw;
+      z-index: 3;
+      position: absolute;
+      left: 37vw;
+      top: 23vh;
+      
+ 
+}
+
+.tav:hover {
+      opacity: 0.7;
+
+}
+
+.logo { 
+      width: 27vw;
+      z-index: 0;
+      transform: rotate(-30deg);
+      position: absolute;
+      left: 6vw;
+      top: 15vh;
+}
+
+.bar { 
+      width: 3.5vw;
+      z-index: 0;
+      transform: rotate(55deg);
+      position: absolute;
+      left: 63.5vw;
+      top: 13vh;
+}
+
+.kn { 
+      width: 3.5vw;
+      z-index: 0;
+      transform: rotate(55deg);
+      position: absolute;
+      left: 64vw;
+      top: 21vh;
+}
+
+.arc { 
+      width: 3.5vw;
+      z-index: 0;
+      transform: rotate(115deg);
+      position: absolute;
+      left: 68vw;
+      top: 19vh;
+}
+
+.mon { 
+      width: 7.2vw;
+      z-index: 0;
+      transform: rotate(-115deg);
+      position: absolute;
+      left: 58vw;
+      top: 15vh;
+}
+
+
+
+@keyframes dragon {
+    0%   {left:-15vw; top:35vh;}
+    50% {left:115vw; top:35vh;}
+    100% {left:115vw; top:35vh;}
+
+}
+
+.dragon { 
+    width: 13vw;
+    height: 13vw;
+    position: absolute;
+    top: 35vh;
+    left: -15vw;
+    animation-name: dragon;
+    animation-duration: 15s;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 5;
+}
+
+/*@keyframes boat {
+    0%   {left:0px; top:600px;}
+    40% {left:710px; top:490px;}
+    60% {left:1000px; top:390px;}
+    100% {left:1500px; top:290px;}
+    
+
+}*/
+
+/*
+.boat { 
+    width: 50px;
+    position: absolute;
+    animation-name: boat;
+    animation-duration: 20s;
+    animation-delay: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 0;
+    transform: rotate(70deg);
+    left: 100px;
+    top: 600px;
+}*/
+ 
+
+
+#logtext {
+    z-index: 6;
+	width:23vw;
+	height:50vh;
+    position: absolute;
+    left: 37vw;
+    top: 30vh;
+    font-size:4vh; 
+    font-weight:bold;
+    
+.button {
+	width:10vw;
+	height:10vh;
+    position: absolute;
+    left: 6vw;
+    top: 35vh;
+    align-content: center;
+    
+}
+    
+
+}
+}

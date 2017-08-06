@@ -1,0 +1,86 @@
+<head>
+<title>Dragon Master</title>
+<!--- Text changing script --->
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+</head> 
+
+<body>
+
+<div id="flip"><img src ="/assets/index/rotate.png", class ="rotate">
+
+<p class="fliptext"> Flip Your Phone</p>
+</div>
+    
+<div id="lab">
+Base Stats
+</div>
+<div id="page1"> </div>
+
+<div id="statlab">
+<p>Strength:</p>  
+<p>Constitution:</p> 
+<p>Dexterty:</p>
+<p>Intelligence:</p>  
+<p>Chrismia:</p>
+<p>Wisdom:</p>
+</div>
+    
+<div id="statnlab">
+<p><b id="strength"></p>  
+<p><b id="constitution"></p> 
+<p><b id="dext"></p>
+<p><b id="intell"></p>  
+<p><b id="chris"></p>
+<p><b id="wisdom"> </p>
+</div>
+    
+<div id="skilllab">
+<p>Skill Points: <b id="points"></p>
+    </div>
+
+<div id='bmlab'>
+<p>BM Str:</p>
+<p>BM Con:</p>  
+<p>BM Dex:</p>  
+<p>BM Int:</p>  
+<p>BM Chr:</p>  
+<p>BM Wis:</p>
+</div>
+    
+<div id='bmnlab'>
+<p><b id="basestr"></p>
+<p><b id="basecon"></p>  
+<p><b id="basedex"></p>  
+<p><b id="baseint"></p>  
+<p><b id="basechr"></p>  
+<p><b id="basewis"></p>
+</div>
+
+
+<div id='butlab'>
+<input type="image" src="/assets/stat/up.png" class="valicon" onclick='str_1()' />
+<input type="image" src="/assets/stat/down.png" class="valicon" onclick='str_0()' /></br>
+<input type="image" src="/assets/stat/up.png" class="valicon" onclick='con_1()' />
+<input type="image" src="/assets/stat/down.png" class="valicon" onclick='con_0()' /></br>
+<input type="image" src="/assets/stat/up.png" class="valicon" onclick='dex_1()' />
+<input type="image" src="/assets/stat/down.png" class="valicon" onclick='dex_0()' /></br>
+<input type="image" src="/assets/stat/up.png" class="valicon" onclick='int_1()' />
+<input type="image" src="/assets/stat/down.png" class="valicon" onclick='int_0()' /></br>
+<input type="image" src="/assets/stat/up.png" class="valicon" onclick='chr_1()' />
+<input type="image" src="/assets/stat/down.png" class="valicon" onclick='chr_0()' /></br>
+<input type="image" src="/assets/stat/up.png" class="valicon" onclick='wis_1()' />
+<input type="image" src="/assets/stat/down.png" class="valicon" onclick='wis_0()' /></br>
+</div>
+
+<div id="button1">
+    
+    <%= link_to characters_class_path do %>
+    <%= image_tag "/assets/race/next.png", class: "buttonicon"%>
+<% end %>
+
+
+</div>
+
+
+</body>
+<%= javascript_include_tag('bstat.js') %>

@@ -1,0 +1,44 @@
+<head>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+
+<title>Dragon Master</title>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+<div id="flip"><img src ="/assets/index/rotate.png", class ="rotate">
+
+<p class="fliptext"> Flip Your Phone</p>
+    
+</div>
+
+<div id="map">
+    
+    <%= link_to players_path do %>
+<%= image_tag "index/hos.png", class: "hos"%>
+<% end %>    
+
+<%= link_to dms_path do %>
+<%= image_tag "index/wiz.png", class: "wiz"%>
+<% end %>  
+
+<%= link_to root_path do %>
+<%= image_tag "index/tav.png", class: "tav"%>
+<% end %>
+    
+<%= link_to root_path do %>
+<%= image_tag "index/logo.png", class: "logo"%>
+<% end %>
+
+<%= link_to root_path do %>
+<%= image_tag "index/drag.png", class: "dragon"%>
+<% end %>
+    
+<!--<img src ="/assets/index/boat.png", class ="boat">-->
+<img src ="/assets/index/bar.png", class ="bar">   
+<img src ="/assets/index/kn.png", class ="kn">
+<img src ="/assets/index/arch.png", class ="arc">   
+<img src ="/assets/index/mon.png", class ="mon">   
+</div> 
+    
+
+</body>

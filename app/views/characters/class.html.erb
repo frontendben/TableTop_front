@@ -1,0 +1,43 @@
+<head>
+<title>Dragon Master</title>
+<!--- Text changing script --->
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+
+
+</head> 
+<script type="text/javascript" src="info.js"></script>
+
+<body>
+<div id="flip"><img src ="/assets/index/rotate.png", class ="rotate">
+
+<p class="fliptext"> Flip Your Phone</p>
+</div>
+    
+
+<div id="lab">Choose Your Class
+</div>
+<div id="info">
+    <hr3><b id="boldStuff">Select your class.</Br> </br> Your class will affect your atributes through out the character creations process, so be sure to choose carefully. </br></br>Click on the different races to learn more about each!</b> </hr3>    
+    
+    </div>  
+
+<div id="page">
+<input type="image" src="/assets/race/player.png" class="socialicon" alt="Social Icon" onclick='halfling()' />
+<input type="image"src="/assets/race/player.png" class="socialicon" alt="Social Icon" onclick='dwarf()' value='Change Text'/>
+<input type="image" src="/assets/race/player.png" class="socialicon" alt="Social Icon"/>
+    </br>
+<input type="image"src="/assets/race/player.png" class="socialicon" alt="Social Icon"/>
+<input type="image" src="/assets/race/player.png" class="socialicon" alt="Social Icon"/>
+<input type="image" src="/assets/race/player.png" class="socialicon" alt="Social Icon"/>
+</div>                  
+
+<div id="button">
+    
+    <%= link_to characters_stats_path do %>
+    <%= image_tag "/assets/race/next.png", class: "buttonicon"%>
+<% end %>
+
+
+</div>
+<%= javascript_include_tag('race.js') %>
+</body>
