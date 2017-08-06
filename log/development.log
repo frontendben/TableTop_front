@@ -62546,3 +62546,11 @@ Processing by CharactersController#stats as HTML
 Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-08-06 15:17:26 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (946.3ms)
+Completed 200 OK in 1148ms (Views: 1136.9ms | ActiveRecord: 0.0ms)
+
+
