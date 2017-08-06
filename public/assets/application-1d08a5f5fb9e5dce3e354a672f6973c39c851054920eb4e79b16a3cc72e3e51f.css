@@ -1,0 +1,1231 @@
+@media screen and (orientation: landscape) {
+  /* line 2, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  body {
+    margin: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: Black;
+    overflow: hidden;
+  }
+
+  /* line 8, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  p {
+    line-height: 1px;
+  }
+
+  /* line 10, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  h10 {
+    color: white;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  /* Board functionality */
+  /* line 13, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  #gameboard {
+    float: left;
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    left: 0px;
+    top: 10.9vh;
+    z-index: 0;
+  }
+
+  /* line 23, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  #brush1 {
+    position: absolute;
+    left: 78vw;
+    top: 14vh;
+    width: 10.5vw;
+    height: 79vh;
+    border-radius: 2vh;
+    border: 0px solid black;
+    background-color: #e4f2de;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 1px 2px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 5px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+
+  /* line 41, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  #brush2 {
+    position: absolute;
+    left: 1.5vw;
+    top: 14vh;
+    width: 8vw;
+    height: 79vh;
+    border-radius: 2vh;
+    border: 0px solid black;
+    background-color: #e4f2de;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 1px 2px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 5px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+
+  /* Tiles */
+  /* line 62, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .square {
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    background-image: url("board/grass.png");
+    background-size: cover;
+    float: bottom;
+    display: inline-block;
+  }
+
+  /* line 77, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .square2 {
+    width: 5vw;
+    height: 5vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    background-image: url("board/dirt.jpg");
+    background-size: cover;
+    z-index: 2;
+    display: inline-block;
+  }
+
+  /* line 91, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .roof {
+    width: 7.5vw;
+    height: 7.5vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    background-image: url("board/Tiles/roof1.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+  }
+
+  /* line 106, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .roof1 {
+    width: 7.5vw;
+    height: 7.5vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    background-image: url("board/Tiles/roof2.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+  }
+
+  /* line 121, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .wall {
+    width: 7.5vw;
+    height: 7.5vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    background-image: url("board/Tiles/wall1.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+  }
+
+  /* line 136, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .door {
+    width: 3vw;
+    height: 4vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+    background-image: url("board/Tiles/door.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+  }
+
+  /* line 151, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .wind {
+    width: 1.8vw;
+    height: 2.5vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+    background-image: url("board/Tiles/window.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+  }
+
+  /* line 166, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .table {
+    width: 5vw;
+    height: 3.6vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    background-image: url("board/Tiles/table.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+  }
+
+  /* line 181, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .tree {
+    width: 5vw;
+    height: 8vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    background-image: url("board/Tiles/tree.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+  }
+
+  /* line 196, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .well {
+    width: 5vw;
+    height: 6.2vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    background-image: url("board/Tiles/well.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+  }
+
+  /* line 210, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .water {
+    width: 5vw;
+    height: 5vw;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    background-image: url("board/Tiles/water.png");
+    background-size: contain;
+    float: bottom;
+    display: inline-block;
+  }
+
+  /* line 224, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .squaredotted {
+    width: 5vw;
+    height: 5vw;
+    border: 0px dotted black;
+    float: left;
+    color: gray;
+    top: -1400px;
+    background-image: url("board/Tiles/square.jpg");
+    z-index: -1;
+  }
+
+  /* Borders for buttons*/
+  /* line 238, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  #plyscr {
+    float: left;
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5a6773), color-stop(25%, #4e5a65), color-stop(75%, #4e5a65), color-stop(100%, #5a6773));
+    border: 0.3vw solid black;
+    left: 0px;
+    top: 0px;
+    border-radius: 1vw;
+    filter: blur(0.1vw);
+    z-index: -1;
+  }
+
+  /* line 251, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  #emscr {
+    float: left;
+    width: 9.4vw;
+    height: 89vh;
+    position: absolute;
+    background: -webkit-gradient(linear, right top, left top, color-stop(0%, #5a6773), color-stop(13%, #4e5a65), color-stop(87%, #5a6773), color-stop(100%, #4e5a65));
+    border: 0.3vw solid black;
+    left: 90.1vw;
+    top: 10vh;
+    border-radius: 1vw;
+    z-index: -2;
+    filter: blur(0.1vw);
+  }
+
+  /* Funtional Buttons*/
+  /* line 268, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  #trash {
+    position: absolute;
+    left: 92vw;
+    top: 75vh;
+    width: 7vw;
+    height: 7vw;
+    background-image: url("board/trash.png");
+    background-size: cover;
+  }
+
+  /* line 278, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  #showland {
+    position: absolute;
+    left: 91.5vw;
+    top: 23vh;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  /* line 285, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  #showbuilding {
+    position: absolute;
+    left: 91vw;
+    top: 47vh;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  /* line 293, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  #cam {
+    position: absolute;
+    left: 2.5vw;
+    top: 0.8vh;
+    width: 5vw;
+    height: 5vw;
+  }
+
+  /* line 300, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  #camt {
+    position: absolute;
+    left: 8vw;
+    top: 1vw;
+    width: 15vw;
+    height: 4.5vw;
+  }
+
+  /* line 311, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .landicon {
+    width: 8vw;
+    margin: 10px auto 10 auto;
+  }
+
+  /* line 317, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .buldicon {
+    width: 9vw;
+    margin: 10px auto 10 auto;
+  }
+
+  /* line 323, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/board.scss */
+  .camicon {
+    width: 5vw;
+  }
+}
+@media screen and (orientation: landscape) {
+  /* line 3, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  body {
+    font: 12px Arial, Helvetica, sans-serif;
+    color: black;
+    background: #cea510;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  /* line 11, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  p {
+    line-height: 2.3vh;
+  }
+
+  /* line 13, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  /* line 15, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+
+  /* line 17, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  h5 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+
+  /* line 18, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  h6 {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 34px;
+  }
+
+  /* line 19, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  h7 {
+    font-size: 2.8vh;
+    font-weight: bold;
+    line-height: 115%;
+  }
+
+  /* line 22, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  #bar {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("tavern.jpg");
+    background-size: 100vw 100vh;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+  }
+
+  /* line 33, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  .dwarf {
+    opacity: 1;
+    width: 11.5vw;
+    height: 34.7vh;
+    position: absolute;
+    left: 44vw;
+    top: 37vh;
+  }
+
+  /* line 43, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  .dwarf:hover {
+    opacity: 0.6;
+  }
+
+  /* line 51, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  .book {
+    opacity: 1;
+    width: 17vw;
+    height: 60.8vh;
+    position: absolute;
+    left: 67vw;
+    top: 30.3vh;
+  }
+
+  /* line 61, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  .book:hover {
+    opacity: 0.7;
+    z-index: 0;
+  }
+
+  /* line 68, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  .board {
+    opacity: 1;
+    width: 10vw;
+    height: 5.2vw;
+    position: absolute;
+    left: 15.5vw;
+    top: 56.8vh;
+    transform: rotateX(55deg);
+  }
+
+  /* line 80, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  .board:hover {
+    opacity: 0.6;
+    left: 17vw;
+    top: 54.8vh;
+  }
+
+  /* line 87, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  #fairy {
+    box-shadow: 0px 0px 10px orange;
+    width: 1.1vw;
+    height: 1.1vw;
+    border-radius: 6vw;
+    position: absolute;
+    left: -1.5vw;
+    top: -20px;
+    background: yellow;
+    animation-name: fly, pulse;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    z-index: 1;
+  }
+
+  /* line 103, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  #dis1 {
+    position: absolute;
+    left: 23.1vw;
+    top: 25vh;
+    width: 14.5vw;
+    animation-name: dis1;
+    animation-duration: 3.9s;
+    animation-delay: 1.75s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  /* line 116, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  #dis2 {
+    position: absolute;
+    left: 23.1vw;
+    top: 25vh;
+    width: 14.5vw;
+    animation-name: dis2;
+    animation-duration: 3.9s;
+    animation-delay: 6.4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  /* line 129, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  #dis3 {
+    position: absolute;
+    left: 23.1vw;
+    top: 25vh;
+    width: 14.5vw;
+    animation-name: dis3;
+    animation-duration: 3.9s;
+    animation-delay: 11.05s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  /* line 142, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/charactercc.scss */
+  #conban {
+    position: absolute;
+    left: 20.5vw;
+    top: 16vh;
+    width: 20vw;
+    height: 45vh;
+    background-image: url("scroll.png");
+    background-size: 20vw 45vh;
+    z-index: 0;
+    opacity: 0;
+    animation-name: bakg;
+    animation-duration: 13.5s;
+    animation-delay: 1.75s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes fly {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    5% {
+      left: 19vw;
+      top: 53vh;
+    }
+    31% {
+      left: 19vw;
+      top: 53vh;
+    }
+    36% {
+      left: 48.5vw;
+      top: 30vh;
+    }
+    62% {
+      left: 48.5vw;
+      top: 30vh;
+    }
+    67% {
+      left: 77vw;
+      top: 25vh;
+    }
+    93% {
+      left: 77vw;
+      top: 25vh;
+    }
+    95% {
+      left: 105vw;
+      top: 35vh;
+    }
+    100% {
+      left: 105vw;
+      top: 35vh;
+    }
+  }
+  @keyframes dis1 {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes dis2 {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes dis3 {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes bakg {
+    0% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 8px yellow, inset 0 0 60px orange;
+    }
+    5% {
+      box-shadow: 0 0 60px yellow, inset 0 0 8px orange;
+    }
+    10% {
+      box-shadow: 0 0 8px yellow, inset 0 0 60px orange;
+    }
+    15% {
+      box-shadow: 0 0 60px yellow, inset 0 0 8px orange;
+    }
+    20% {
+      box-shadow: 0 0 8px yellow, inset 0 0 60px orange;
+    }
+    25% {
+      box-shadow: 0 0 60px yellow, inset 0 0 8px orange;
+    }
+    30% {
+      box-shadow: 0 0 8px yellow, inset 0 0 60px orange;
+    }
+    35% {
+      box-shadow: 0 0 60px yellow, inset 0 0 8px orange;
+    }
+    40% {
+      box-shadow: 0 0 8px yellow, inset 0 0 60px orange;
+    }
+    45% {
+      box-shadow: 0 0 60px yellow, inset 0 0 8px orange;
+    }
+    50% {
+      box-shadow: 0 0 8px yellow, inset 0 0 60px orange;
+    }
+    55% {
+      box-shadow: 0 0 60px yellow, inset 0 0 8px orange;
+    }
+    60% {
+      box-shadow: 0 0 8px yellow, inset 0 0 60px orange;
+    }
+    65% {
+      box-shadow: 0 0 60px yellow, inset 0 0 8px orange;
+    }
+    70% {
+      box-shadow: 0 0 8px yellow, inset 0 0 60px orange;
+    }
+    75% {
+      box-shadow: 0 0 60px yellow, inset 0 0 8px orange;
+    }
+    80% {
+      box-shadow: 0 0 8px yellow, inset 0 0 60px orange;
+    }
+    85% {
+      box-shadow: 0 0 60px yellow, inset 0 0 8px orange;
+    }
+    90% {
+      box-shadow: 0 0 8px yellow, inset 0 0 60px orange;
+    }
+    95% {
+      box-shadow: 0 0 60px yellow, inset 0 0 8px orange;
+    }
+    100% {
+      box-shadow: 0 0 8px yellow, inset 0 0 60px orange;
+    }
+  }
+}
+@media screen and (orientation: landscape) {
+  /* line 2, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  html, body {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+
+  /* line 7, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  body {
+    font: 12px Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background-color: #6d81a0;
+    height: 100%;
+  }
+
+  /* line 13, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  p {
+    line-height: 2.3vh;
+  }
+
+  /* line 15, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  h3 {
+    font-size: 0vh;
+    font-weight: 0;
+    color: black;
+  }
+
+  /* line 17, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  h2 {
+    font-size: 10vh;
+    font-weight: bold;
+    color: black;
+  }
+
+  /* line 19, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+
+  /* line 21, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  h5 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+
+  /* line 22, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  h6 {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 34px;
+  }
+
+  /* line 23, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  hr3 {
+    font-size: 4.2vh;
+    font-weight: 0;
+    color: black;
+  }
+
+  /* line 25, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #racebg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("gnome.jpg");
+    background-size: 100vw 100vh;
+  }
+
+  /* line 33, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #lab {
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    position: absolute;
+    top: 1vh;
+    font-size: 10vh;
+    font-weight: bold;
+    color: aliceblue;
+  }
+
+  /* line 45, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #page {
+    width: 51.5vw;
+    height: 64.8vh;
+    text-align: center;
+    position: absolute;
+    left: 42vw;
+    top: 15vh;
+    background-color: #e4f2de;
+    border-radius: 1.5vw;
+    border: 0.15vw solid black;
+    -webkit-box-shadow: 0.4vw 0.4vw 0.5vw 0.8vw rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0.4vw 0.4vw 0.5vw 0.8vw rgba(0, 0, 0, 0.4);
+    box-shadow: 0.4vw 0.4vw 0.5vw 0.8vw rgba(0, 0, 0, 0.4);
+    padding: 0.25vw;
+  }
+
+  /* line 62, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #page1 {
+    width: 90vw;
+    height: 65vh;
+    text-align: center;
+    position: absolute;
+    left: 5vw;
+    top: 15vh;
+    background-color: #e4f2de;
+    border-radius: 1.5vw;
+    border: 0.15vw solid black;
+    -webkit-box-shadow: 0.4vw 0.4vw 0.5vw 0.8vw rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0.4vw 0.4vw 0.5vw 0.8vw rgba(0, 0, 0, 0.4);
+    box-shadow: 0.4vw 0.4vw 0.5vw 0.8vw rgba(0, 0, 0, 0.4);
+  }
+
+  /* line 79, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #info {
+    width: 28vw;
+    height: 75vh;
+    text-align: left;
+    position: absolute;
+    left: 5vw;
+    top: 15vh;
+    background-color: #e4f2de;
+    border-radius: 1.5vw;
+    border: 0.15vw solid black;
+    padding: 2vh;
+    -webkit-box-shadow: 0.4vw 0.4vw 0.5vw 0.8vw rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0.4vw 0.4vw 0.5vw 0.8vw rgba(0, 0, 0, 0.4);
+    box-shadow: 0.4vw 0.4vw 0.5vw 0.8vw rgba(0, 0, 0, 0.4);
+  }
+
+  /* line 96, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #button {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    left: 60.5vw;
+    top: 82.8vh;
+    align-content: center;
+    z-index: 100;
+  }
+
+  /* line 107, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #button1 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    left: 42vw;
+    top: 82.8vh;
+    align-content: center;
+    z-index: 100;
+  }
+
+  /* line 119, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  .buttonicon {
+    width: 15vw;
+    height: 15vh;
+  }
+
+  /* line 124, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  .socialicon {
+    opacity: .5;
+    width: 16.5vw;
+    height: 31.5vh;
+    border-radius: 1.5vw;
+    border: 0.15vw solid black;
+  }
+
+  /* line 133, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  .valicon {
+    width: 5.2vh;
+    height: 5.2vh;
+  }
+
+  /* line 140, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  .socialicon:hover {
+    opacity: 1;
+  }
+
+  /* line 144, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #statlab {
+    left: 12vw;
+    top: 18vh;
+    position: absolute;
+    font-size: 5.5vh;
+    font-weight: bold;
+    line-height: 0vh;
+    z-index: 100;
+  }
+
+  /* line 155, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #statnlab {
+    left: 37vw;
+    top: 18vh;
+    position: absolute;
+    font-size: 5.5vh;
+    font-weight: bold;
+    line-height: 5vh;
+    z-index: 100;
+    text-align: right;
+  }
+
+  /* line 167, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #bmlab {
+    left: 58vw;
+    top: 18vh;
+    position: absolute;
+    font-size: 5.5vh;
+    font-weight: bold;
+    line-height: 5vh;
+    z-index: 100;
+  }
+
+  /* line 177, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #bmnlab {
+    left: 75vw;
+    top: 18vh;
+    position: absolute;
+    font-size: 5.5vh;
+    font-weight: bold;
+    line-height: 5vh;
+    z-index: 100;
+    text-align: right;
+  }
+
+  /* line 190, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #butlab {
+    left: 82vw;
+    top: 20.5vh;
+    position: absolute;
+    font-size: 5vh;
+    font-weight: bold;
+    line-height: 8.0vh;
+    z-index: 100;
+  }
+
+  /* line 201, /Users/ericbisby/Documents/GitHub/TableTop/app/assets/stylesheets/race.scss */
+  #skilllab {
+    left: 40vw;
+    top: 68vh;
+    position: absolute;
+    font-size: 5.5vh;
+    font-weight: bold;
+    line-height: 7.5vh;
+    z-index: 100;
+  }
+}
+@media screen and (orientation: portrait) {
+  /* line 2, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  html, body {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    margin: 0;
+  }
+
+  /* line 8, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  #flip {
+    height: 100vh;
+    width: 100vw;
+    background-color: #C8B0B0;
+    background-size: 100vw 100vh;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+    z-index: 100;
+  }
+  /* line 18, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  #flip .rotate {
+    width: 94vw;
+    height: 60vh;
+    position: absolute;
+    left: 3vw;
+    top: 20vh;
+  }
+  /* line 26, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  #flip .fliptext {
+    font-size: 7vh;
+    font-weight: bold;
+    text-align: center;
+    font-family: Courier;
+    color: black;
+    width: 100vw;
+    height: 5vh;
+    position: absolute;
+    line-height: 119%;
+  }
+}
+@media screen and (orientation: landscape) {
+  /* line 47, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  html, body {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    margin: 0;
+  }
+
+  /* line 53, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  body {
+    font: 12px Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  /* line 60, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  p {
+    line-height: 2.3vh;
+  }
+
+  /* line 62, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  /* line 64, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  h2 {
+    font-size: 72px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+
+  /* line 66, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+
+  /* line 68, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  h5 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  /* line 69, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  h6 {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 34px;
+  }
+
+  /* line 73, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  #flip {
+    display: none;
+  }
+
+  /* line 77, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  #map {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/assets/map.jpg");
+    background-size: 100vw 100vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+  }
+
+  /* line 88, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .log {
+    z-index: 6;
+    width: 33vw;
+    height: 80vh;
+    position: absolute;
+    left: 32vw;
+    top: 15vh;
+  }
+
+  /* line 98, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .hos {
+    opacity: 1;
+    width: 12vw;
+    z-index: 1;
+    position: absolute;
+    left: 15vw;
+    top: 40vh;
+  }
+
+  /* line 108, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .hos:hover {
+    opacity: 0.7;
+    visibility: visible;
+  }
+
+  /* line 115, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .wiz {
+    opacity: 1;
+    width: 15vw;
+    z-index: 2;
+    position: absolute;
+    left: 60vw;
+    top: 50vh;
+  }
+
+  /* line 126, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .wiz:hover {
+    opacity: 0.7;
+  }
+
+  /* line 132, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .tav {
+    opacity: 1;
+    width: 9vw;
+    z-index: 3;
+    position: absolute;
+    left: 37vw;
+    top: 23vh;
+  }
+
+  /* line 143, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .tav:hover {
+    opacity: 0.7;
+  }
+
+  /* line 148, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .logo {
+    width: 27vw;
+    z-index: 0;
+    transform: rotate(-30deg);
+    position: absolute;
+    left: 6vw;
+    top: 15vh;
+  }
+
+  /* line 157, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .bar {
+    width: 3.5vw;
+    z-index: 0;
+    transform: rotate(55deg);
+    position: absolute;
+    left: 63.5vw;
+    top: 13vh;
+  }
+
+  /* line 166, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .kn {
+    width: 3.5vw;
+    z-index: 0;
+    transform: rotate(55deg);
+    position: absolute;
+    left: 64vw;
+    top: 21vh;
+  }
+
+  /* line 175, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .arc {
+    width: 3.5vw;
+    z-index: 0;
+    transform: rotate(115deg);
+    position: absolute;
+    left: 68vw;
+    top: 19vh;
+  }
+
+  /* line 184, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .mon {
+    width: 7.2vw;
+    z-index: 0;
+    transform: rotate(-115deg);
+    position: absolute;
+    left: 58vw;
+    top: 15vh;
+  }
+
+  @keyframes dragon {
+    0% {
+      left: -15vw;
+      top: 35vh;
+    }
+    50% {
+      left: 115vw;
+      top: 35vh;
+    }
+    100% {
+      left: 115vw;
+      top: 35vh;
+    }
+  }
+  /* line 202, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  .dragon {
+    width: 13vw;
+    height: 13vw;
+    position: absolute;
+    top: 35vh;
+    left: -15vw;
+    animation-name: dragon;
+    animation-duration: 15s;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 5;
+  }
+
+  /*@keyframes boat {
+      0%   {left:0px; top:600px;}
+      40% {left:710px; top:490px;}
+      60% {left:1000px; top:390px;}
+      100% {left:1500px; top:290px;}
+      
+  
+  }*/
+  /*
+  .boat { 
+      width: 50px;
+      position: absolute;
+      animation-name: boat;
+      animation-duration: 20s;
+      animation-delay: 15s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      z-index: 0;
+      transform: rotate(70deg);
+      left: 100px;
+      top: 600px;
+  }*/
+  /* line 242, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  #logtext {
+    z-index: 6;
+    width: 23vw;
+    height: 50vh;
+    position: absolute;
+    left: 37vw;
+    top: 30vh;
+    font-size: 4vh;
+    font-weight: bold;
+  }
+  /* line 252, /Users/ericbisby/Documents/GitHub/TableTop_front/app/assets/stylesheets/welcome.scss */
+  #logtext .button {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    left: 6vw;
+    top: 35vh;
+    align-content: center;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
