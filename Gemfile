@@ -19,31 +19,7 @@ group :production do
     gem 'pg'
 end
 # Use Puma as the app server
-# Gemfile
-gem "puma"
-
-# Procfile
-web: bundle exec puma -p $PORT -e $RACK_ENV -C config/puma.rb
-
-# add to config block config/environments/production.rb
-config.threadsafe!
-
-# get rid of NewRelic after_fork code, if you were doing this:
-# http://support.newrelic.com/kb/troubleshooting/unicorn-no-data
-# and get rid of config/unicorn.rb if you were using that
-
-# config/puma.rb
-require "active_record"
-cwd = File.dirname(__FILE__)+"/.."
-ActiveRecord::Base.connection.disconnect! rescue ActiveRecord::ConnectionNotEstablished
-ActiveRecord::Base.establish_connection(ENV["DATABASE_URL"] || YAML.load_file("#{cwd}/config/database.yml")[ENV["RACK_ENV"]])
-ActiveRecord::Base.verify_active_connections!
-
-# if you use NewRelic, set your NEWRELIC_DISPATCHER environment variable on heroku, per
-# https://github.com/puma/puma/issues/128 - may not be needed for future releases of Puma
-
-heroku config:add NEWRELIC_DISPATCHER=Puma
-
+gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
