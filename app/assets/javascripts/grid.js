@@ -1,4 +1,4 @@
-
+//= require jquery
 /* drag elements */
 $(function () {
             /* drag pallets */
