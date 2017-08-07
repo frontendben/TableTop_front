@@ -1,5 +1,5 @@
 //= require jquery
-//= require jquery.ui.all
+
 /* drag elements */
 $(function () {
             /* drag pallets */
